@@ -15,7 +15,6 @@ A Python library for performing seam carving on audio files, converting audio to
 - [Features](#features)
 - [Examples](#examples)
 - [Documentation](#documentation)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -24,11 +23,54 @@ A Python library for performing seam carving on audio files, converting audio to
 You can install the library using pip:
 
 ```sh
-pip install audio_processing
+pip install audio_carver
 ```
 
 ## Usage
 
+Example in a python file:
+
+```python 
+from audio_carver import carve_audio, sig_to_wav
+
+# Carving in time domain and writing to output
+magnitude, phase = carve_audio(number_of_seams, magnitude, phase, is_vertical=True) # default true
+sig_to_wav('output.wav', magnitude, phase)
+```
+
+
+Example in terminal:
+
+```sh
+$ python main.py <input_file.wav> <number_of_seams> <--carve_time> # remove to carve in frequency
+```
 
 
 ## Features
+
+Current supported audio formats: .wav
+
+Audio processing capabilities: spectral analysis, time-domain operations, signal modification
+
+Input requirements: None
+
+Output: Mono with sampling rate specified by the original input file's sampling rate
+
+
+## Examples
+
+How to load an audio file:
+
+
+
+## Documentation
+
+Link to documentation.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+Please contact alicjam@uw.edu for questions, suggestions, etc. Thank You!
