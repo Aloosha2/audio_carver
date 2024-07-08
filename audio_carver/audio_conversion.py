@@ -31,5 +31,4 @@ def extract_pow_pha(matrix):
 def sig_to_wav(output_filename, magnitude, phase):
     complex_spectrogram = magnitude * np.exp(1j * phase)
     reconstructed_signal = get_istft(complex_spectrogram)
-    output_filename = f'filename_carved'.wav
     sf.write(output_filename, reconstructed_signal, sampling_rate)

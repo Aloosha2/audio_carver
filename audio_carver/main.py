@@ -1,6 +1,6 @@
 import sys
-from Audio_Conversion import *
-from Seam_Carving import carve_audio
+from audio_conversion import *
+from seam_carving import carve_audio
 
 def main(input_wavfile, n_of_seams):
     # Load the audio file

@@ -1,6 +1,5 @@
 import numpy as np
 from numba import njit
-from Audio_Conversion import *
 
 @njit
 def min_vertical_seam_energy(pixel_energies):
