@@ -56,12 +56,25 @@ Input requirements: None
 
 Output: Mono with sampling rate specified by the original input file's sampling rate
 
+*
 
 ## Examples
 
 How to load an audio file:
 
+```python 
+from audio_carver import *
 
+audio, sampling_rate = load_wavfile('filename.wav')
+```
+
+Find the minimum seam:
+
+```python 
+from audio_carver import *
+
+minimum_energy_seam = min_vertical_seam_energy(magnitude)
+```
 
 ## Documentation
 
