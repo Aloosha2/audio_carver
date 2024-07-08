@@ -5,7 +5,7 @@ Seam Carving as a Data Augmentation Technique
 
 A Python library for performing seam carving on audio files, converting audio to matrix and back, and generating spectrograms.
 
-![Build Status](https://img.shields.io/github/workflow/status/Aloosh2/audio_carver/CI)
+![Build Status](https://img.shields.io/github/workflow/status/Aloosha2/audio_carver/CI)
 ![License](https://img.shields.io/github/license/Aloosha2/audio_carver)
 ![PyPI version](https://img.shields.io/pypi/v/audio_processing)
 

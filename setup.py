@@ -8,8 +8,8 @@ setup(
         'numpy',
         'librosa',
         'soundfile',
-        'matplotlib',
-        'numba'
+        'numba',
+        'argparse'
     ],
     author='Alicja Misiuda',
     author_email='alicjam@uw.edu',
@@ -18,7 +18,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/Aloosha2/AudioCarver',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',  # Replace with the appropriate status
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
@@ -37,9 +37,9 @@ setup(
         'Record of Changes': 'https://github.com/Aloosha2/AudioCarver/CHANGELOG.md',
         'Source Code': 'https://github.com/Aloosha2/AudioCarver/AudioCarver',
     },
-    # entry_points={  # Optional: Specify console scripts or GUI scripts
-    #     'console_scripts': [
-    #         'my_library=my_library.cli:main',  # Replace with your entry point
-    #     ],
-    # },
+    entry_points={
+        'console_scripts': [
+            'audio_carver=audio_carver.main:main',  # Replace with your entry point
+        ],
+    },
 )
