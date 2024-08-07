@@ -34,15 +34,15 @@
             </p>
             <div class="audio-samples">
                 <h3 style="font-size: 30px">Examples</h3>
-                <h4 style="font-size: 20px;">Working on spectrogram:</h4>
+                <h4 style="font-size: 20px;">Carving in the Frequency Domain:</h4>
                 <div class="big-screen">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th style="width: 0px"></th>
                                 <th style="text-align: center;">Original</th>
-                                <th style="text-align: center;">260 Seams in Frequency</th>
-                                <th style="text-align: center;">600 Seams in Frequency</th>
+                                <th style="text-align: center;">260 Seams Carved</th>
+                                <th style="text-align: center;">600 Seams Carved</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -74,14 +74,58 @@
                     </table>
                 </div>
             </div>
+            </section>
+            <div class="audio-samples">
+                <h4 style="font-size: 20px;">Carving in the Time Domain</h4>
+                <div class="big-screen">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 0px"></th>
+                                <th style="text-align: center;">Original</th>
+                                <th style="text-align: center;">200 Seams Carved</th>
+                                <th style="text-align: center;">400 Seams Carved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 0px"></td>
+                                <td>
+                                    <img id="NewJeansOrg.jpeg" src="../audio_carver/images/NewJeansOrg.jpeg" class="img-fluid" style="width: 100%" width="50" height="380">
+                                    <audio controls>
+                                        <source src="../audio_carver/audio/NewJeansOMG.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                                <td>
+                                    <img id="NewJeans_vertical200" src="../audio_carver/images/NewJeans_vertical200.jpeg" class="img-fluid" style="width: 100%" width="50" height="380">
+                                    <audio controls>
+                                        <source src="../audio_carver/audio/NewJeansOMG_vertical200.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                                <td>
+                                    <img id="NewJeans_vertical400.jpeg" src="../audio_carver/images/NewJeans_vertical400.jpeg" class="img-fluid" style="width: 100%" width="50" height="380">
+                                    <audio controls>
+                                        <source src="../audio_carver/audio/NewJeansOMG_vertical400.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
         <section>
-            <h3>Separated source signals for the exemplary file from MUSIC I dataset.</h3>
             <div class="audio-samples">
                 <div class="audio-sample">
-                    <h4>Target</h4>
+                    <h4 style="font-size: 20px;">Also Interesting:</h4>
+                    <p>This audio file had 300 seams carved in the frequency domain. I forgot to keep the same sampling frequency 
+                        of 44100 Hz and instead used 22050 Hz when changing back to .wav file from time. The resulting audio file was elongated and lower frequency.  </p>
                     <audio controls>
-                        <source src="path/to/your/audiofile5.mp3" type="audio/mpeg">
+                        <img id="NewJeansOMG_h_22kHz_300.jpeg" src="../audio_carver/images/NewJeansOMG_h_22kHz_300.jpeg" class="img-fluid" style="width: 100%" width="50" height="380">
+                        <source src="../audio_carver/audio/NewJeansOMG_h_22kHz_300.wav" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
                 </div>
