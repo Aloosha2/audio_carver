@@ -1,53 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #4A4A4A;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-header h2 {
-    margin: 10px 0 0 0;
-    font-size: 1.2em;
-}
-
-header h3 {
-    margin: 10px 0 0 0;
-    font-size: 1em;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .audio-samples {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-around;
 }
 
 .audio-sample {
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
 }
 
 audio {

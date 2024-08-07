@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header style="background-color:lightblue;color:white;padding:30px;text-align: center; color: white">
+    <header style="background-color: lightblue; color: white; padding: 30px; text-align: center;">
         <h1 style="font-size: 45px;">Audio Carver</h1>
         <h2>Alicja Misiuda</h2>
         <h3>University of Washington-Seattle</h3>
@@ -16,15 +16,25 @@
         <section>
             <h2 style="font-size: 30px">Background</h2>
             <p>The seam carving algorithm was first introduced in 2007 for content-aware image resizing.
-                The algorithm calculates "seams" in either the vertical or horizontal direction to be "carved out".  
-                Repeadetly carving these seams will reduce the image size while preserving content that is deemed 
+                The algorithm calculates "seams" in either the vertical or horizontal direction to be "carved out".
+                Repeatedly carving these seams will reduce the image size while preserving content that is deemed
                 important through the algorithm.</p>
-            <p> The motivation behind my work is to apply the seam carving algorithm to audio samples and remove content
-                that is deemed uncessecary. This may be applied in both the vertical and horiozontal context in an audio sample,
+            <p>The motivation behind my work is to apply the seam carving algorithm to audio samples and remove content
+                that is deemed unnecessary. This may be applied in both the vertical and horizontal context in an audio sample,
                 translating to time and frequency domains. Example audio samples are below.</p>
             <h3 style="font-size: 30px">Approach</h3>
+            <p>The audio files that I worked with are in the format of .wav. The idea was to convert the .wav files
+                to the time domain and apply the Short-Time Fourier Transform to convert to the frequency domain. With this,
+                the magnitude and phase could be extracted and used for seam carving. The seam carving algorithm is ran on the magnitude array
+                where the smallest-weight paths are chosen to be deleted. Simultaneously, the same seams are deleted in phase array. Once the
+                chosen amount of seams are carved, the magnitude and phase arrays are multiplied (mag*e^(j*phase)) to reconstruct the complex spectrogram.
+                The Inverse Short-Time Fourier Transform creates the resulting time domain array to be converted back to a .wav file.
+                This algorithm can be used on various formats audio as long as there is a 2d array to work with. For example, some other variations
+                that I tested on was the power density spectrogram, power log spectrogram, and the MFCC representation for just the image of the spectrogram.
+            </p>
             <div class="audio-samples">
                 <h3 style="font-size: 30px">Examples</h3>
+                <p>Working on spectrogram:</p>
                 <div class="audio-sample">
                     <h4>MUSIC I</h4>
                     <audio controls>
@@ -43,13 +53,6 @@
                     <h4>SPEECH</h4>
                     <audio controls>
                         <source src="path/to/your/audiofile3.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="audio-sample">
-                    <h4>DSD100</h4>
-                    <audio controls>
-                        <source src="path/to/your/audiofile4.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
                 </div>
