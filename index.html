@@ -1,12 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Audio Sample Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Audio Carver</h1>
-    <p>Content to display</p>
+    <header>
+        <h1>On Ambisonic Source Separation with Spatially Informed Non-negative Tensor Factorization</h1>
+        <h2>Mateusz Guzik & Konrad Kowalczyk</h2>
+        <h3>Signal Processing Group, Institute of Electronics, Faculty of Computer Science, Electronics and Telecommunications, AGH University of Science and Technology, Kraków, Poland</h3>
+    </header>
+    <main>
+        <section>
+            <h2>Sound source separation</h2>
+            <p>We target the challenging task of Ambisonic-to-Ambisonic reverberant sound source separation. The aim is to estimate individual reverberant source signals, as if no other sound sources were present during the recording.</p>
+            <div class="audio-samples">
+                <h3>Input mixtures for the exemplary audio files.</h3>
+                <div class="audio-sample">
+                    <h4>MUSIC I</h4>
+                    <audio controls>
+                        <source src="path/to/your/audiofile1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="audio-sample">
+                    <h4>MUSIC II</h4>
+                    <audio controls>
+                        <source src="path/to/your/audiofile2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="audio-sample">
+                    <h4>SPEECH</h4>
+                    <audio controls>
+                        <source src="path/to/your/audiofile3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="audio-sample">
+                    <h4>DSD100</h4>
+                    <audio controls>
+                        <source src="path/to/your/audiofile4.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Separated source signals for the exemplary file from MUSIC I dataset.</h3>
+            <div class="audio-samples">
+                <div class="audio-sample">
+                    <h4>Target</h4>
+                    <audio controls>
+                        <source src="path/to/your/audiofile5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <!-- Repeat for other samples like PWD, MWF, etc. -->
+            </div>
+        </section>
+    </main>
 </body>
 </html>
