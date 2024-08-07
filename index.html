@@ -35,26 +35,43 @@
             <div class="audio-samples">
                 <h3 style="font-size: 30px">Examples</h3>
                 <p>Working on spectrogram:</p>
-                <div class="audio-sample">
-                    <h4>MUSIC I</h4>
-                    <audio controls>
-                        <source src="path/to/your/audiofile1.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="audio-sample">
-                    <h4>MUSIC II</h4>
-                    <audio controls>
-                        <source src="path/to/your/audiofile2.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="audio-sample">
-                    <h4>SPEECH</h4>
-                    <audio controls>
-                        <source src="path/to/your/audiofile3.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+                <div class="big-screen">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 0px"></th>
+                                <th style="text-align: center;">Original</th>
+                                <th style="text-align: center;">260 Seams in Frequency</th>
+                                <th style="text-align: center;">600 Seams in Frequency</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 0px"></td>
+                                <td>
+                                    <img id="MI_GT_mix" src="./src/GT/MUSIC_I/images/mix.png" class="img-fluid" style="width: 100%">
+                                    <audio controls>
+                                        <source src="path/to/your/audiofile1.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                                <td>
+                                    <img id="MII_GT_mix" src="./src/GT/MUSIC_II/images/mix.png" class="img-fluid" style="width: 100%">
+                                    <audio controls>
+                                        <source src="path/to/your/audiofile2.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                                <td>
+                                    <img id="S_GT_mix" src="./src/GT/SPEECH/images/mix.png" class="img-fluid" style="width: 100%">
+                                    <audio controls>
+                                        <source src="path/to/your/audiofile3.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
