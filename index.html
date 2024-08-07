@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header style="background-color:lightblue;color:white;padding:20px;text-align: center;">
-        <h1>Audio Carver</h1>
+    <header style="background-color:lightblue;color:white;padding:30px;text-align: center; color: white">
+        <h1 style="font-size: 45px;">Audio Carver</h1>
         <h2>Alicja Misiuda</h2>
         <h3>University of Washington-Seattle</h3>
     </header>
     <main>
         <section>
-            <h2>Overview</h2>
-            <p>Utilizing the seam carving algorithm for audio modification.</p>
+            <h2 style="font-size: 30px">Background</h2>
+            <p>The seam carving algorithm was first introduced in 2007 for content-aware image resizing.
+                The algorithm calculates "seams" in either the vertical or horizontal direction to be "carved out".  
+                Repeadetly carving these seams will reduce the image size while preserving content that is deemed 
+                important through the algorithm.</p>
+            <p> The motivation behind my work is to apply the seam carving algorithm to audio samples and remove content
+                that is deemed uncessecary. This may be applied in both the vertical and horiozontal context in an audio sample,
+                translating to time and frequency domains. Example audio samples are below.</p>
+            <h3 style="font-size: 30px">Approach</h3>
             <div class="audio-samples">
-                <h3>Input mixtures for the exemplary audio files.</h3>
+                <h3 style="font-size: 30px">Examples</h3>
                 <div class="audio-sample">
                     <h4>MUSIC I</h4>
                     <audio controls>
