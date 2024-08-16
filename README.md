@@ -1,12 +1,12 @@
 # AudioCarver
-Seam Carving as a Data Augmentation Technique < br / >
+Seam Carving as a Data Augmentation Technique
+
 For more detail please check out my [website](https://aloosha2.github.io/audio_carver/)
 
 # Audio Processing Library
 
 A Python library for performing seam carving on audio files, converting audio to matrix and back, and generating spectrograms.
 
-![Build Status](https://img.shields.io/github/workflow/status/Aloosha2/audio_carver)
 ![License](https://img.shields.io/github/license/Aloosha2/audio_carver)
 ![PyPI version](https://img.shields.io/pypi/v/audio_processing)
 
