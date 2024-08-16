@@ -1,11 +1,12 @@
 # AudioCarver
 Seam Carving as a Data Augmentation Technique 
+For more detail please check out my [website](https://aloosha2.github.io/audio_carver/)
 
 # Audio Processing Library
 
 A Python library for performing seam carving on audio files, converting audio to matrix and back, and generating spectrograms.
 
-![Build Status](https://img.shields.io/github/workflow/status/Aloosha2/audio_carver/CI)
+![Build Status](https://img.shields.io/github/workflow/status/Aloosha2/audio_carver)
 ![License](https://img.shields.io/github/license/Aloosha2/audio_carver)
 ![PyPI version](https://img.shields.io/pypi/v/audio_processing)
 
@@ -39,7 +40,7 @@ sig_to_wav('output.wav', magnitude, phase)
 ```
 
 
-Example in terminal:
+Example in terminal(Recommended):
 
 ```sh
 $ python main.py <input_file.wav> <number_of_seams> <--carve_time> # remove to carve in frequency
@@ -48,15 +49,15 @@ $ python main.py <input_file.wav> <number_of_seams> <--carve_time> # remove to c
 
 ## Features
 
-Current supported audio formats: .wav
+Current Supported Audio Formats: .wav
 
-Audio processing capabilities: spectral analysis, time-domain operations, signal modification
+Audio Processing Capabilities: Spectral analysis, Time-domain operations, Signal modification
 
-Input requirements: None
+Input Requirements: None
 
-Output: Mono with sampling rate specified by the original input file's sampling rate
+Output: Mono signal with sampling rate inherited from the original input file's sampling rate
 
-*
+VIsualization: Spectrogram comparisons of before/after carving 
 
 ## Examples
 
@@ -78,7 +79,7 @@ minimum_energy_seam = min_vertical_seam_energy(magnitude)
 
 ## Documentation
 
-Link to documentation.
+Documentaion will be uploaded soon.
 
 ## License
 

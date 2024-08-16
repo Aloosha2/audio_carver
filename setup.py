@@ -39,7 +39,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'audio_carver=audio_carver.main:main',  # Replace with your entry point
+            'audio_carver=audio_carver.main:main',
         ],
     },
 )
