@@ -1,5 +1,5 @@
 # AudioCarver
-Seam Carving as a Data Augmentation Technique 
+Seam Carving as a Data Augmentation Technique < br / >
 For more detail please check out my [website](https://aloosha2.github.io/audio_carver/)
 
 # Audio Processing Library
