@@ -8,21 +8,29 @@
 </head>
 <body>
     <header style="background-color: lightblue; color: white; padding: 30px; text-align: center;">
-        <h1 style="font-size: 45px;">Audio Carver</h1>
-        <h2>Alicja Misiuda</h2>
+        <h1 style="font-size: 45px;"><a href="https://github.com/Aloosha2/audio_carver?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">Audio Carver</a></h1>
+        <h2><a href="https://www.linkedin.com/in/alicja-misiuda/" target="_blank" rel="noopener noreferrer">Alicja Misiuda</a></h2>
+        
         <h3>University of Washington-Seattle</h3>
     </header>
     <main>
         <section>
-            <h2 style="font-size: 30px">Background</h2>
-            <p>The seam carving algorithm was first introduced in 2007 for content-aware image resizing.
-                The algorithm calculates "seams" in either the vertical or horizontal direction to be "carved out".
-                Repeatedly carving these seams will reduce the image size while preserving content that is deemed
-                important through the algorithm.</p>
-            <p>The motivation behind my work is to apply the seam carving algorithm to audio samples and remove content
-                that is deemed unnecessary. This may be applied in both the vertical and horizontal context in an audio sample,
-                translating to time and frequency domains. Example audio samples are below.</p>
-            <h3 style="font-size: 30px">Approach</h3>
+            <h4 style="font-size: 30px">Background</h4>
+            <p>In 2007, authors Shai Avidan and Ariel Shamir introduced the seam carving algorithm for content-aware image resizing.
+                Normally, resizing images may become distored or warped due to the aspect ratio not being preserved and
+                may also lose information when they are cropped. The seam carving algorithm aims to preserve the original image
+                content while resizing for a more adaptable resizing experience. To achieve this, the algorithm calculates energy
+                values for all the pixels in an image based on their importance. Then a "seam" is identified by finding the lowest
+                energy-connected pixels in either the vertical or horizontal direction to then be "carved out".
+                Through the repetition of carving seams will reduce the image size while simultaneously preserving content that is deemed
+                important to maintain a balance between image content and carved seams.</p>
+            <p>The motivation behind my work stems from this idea of resizing and preserving content. As mentioned before, the seam carving algorithm
+                was introduced as an image resizing technique. But what if this algorithm can be applied on audio? Seam carving is performed on 
+                an image in its 2d array form. However, audio can also be represented in a 2d array format as a complex-valued matrix.  
+                In theory the algorithm may now be applied to the matrix where both the vertical and horizontal components can be carved. 
+                Notice that carving in the vertical context translates to the time domain while the horizontal context translates to the frequency
+                domain. Example audio samples are below in the "Examples" section.</p>
+            <h5 style="font-size: 30px">Approach</h5>
             <p>The audio files that I worked with are in the format of .wav. The idea was to convert the .wav files
                 to the time domain and apply the Short-Time Fourier Transform to convert to the frequency domain. With this,
                 the magnitude and phase could be extracted and used for seam carving. The seam carving algorithm is ran on the magnitude array
@@ -33,8 +41,8 @@
                 that I tested on was the power density spectrogram, power log spectrogram, and the MFCC representation for just the image of the spectrogram.
             </p>
             <div class="audio-samples">
-                <h3 style="font-size: 30px">Examples</h3>
-                <h4 style="font-size: 20px;">Carving in the Frequency Domain:</h4>
+                <h6 style="font-size: 30px">Examples</h6>
+                <h7 style="font-size: 20px;">Carving in the Frequency Domain:</h7>
                 <div class="big-screen">
                     <table class="table">
                         <thead>
@@ -76,7 +84,7 @@
             </div>
             </section>
             <div class="audio-samples">
-                <h4 style="font-size: 20px;">Carving in the Time Domain</h4>
+                <h8 style="font-size: 20px;">Carving in the Time Domain</h8>
                 <div class="big-screen">
                     <table class="table">
                         <thead>
@@ -120,18 +128,43 @@
         <section>
             <div class="audio-samples">
                 <div class="audio-sample">
-                    <h4 style="font-size: 20px;">Also Interesting:</h4>
+                    <h9 style="font-size: 20px;">Also Interesting:</h9>
                     <p>This audio file had 300 seams carved in the frequency domain. I forgot to keep the same sampling frequency 
                         of 44100 Hz and instead used 22050 Hz when changing back to .wav file from time. The resulting audio file was elongated and lower frequency.  </p>
-                        <img id="NewJeansOMG_h_22kHz_300.jpeg" src="../audio_carver/images/NewJeansOMG_h_22kHz_300.jpeg" class="img-fluid" style="width: 100%" >
+                        <img id="NewJeansOMG_h_22kHz_300.jpeg" src="../audio_carver/images/NewJeansOMG_h_22kHz_300.jpeg" class="img-fluid" style="width: 80%" width="10" height="380">
                     <audio controls>
                         <source src="../audio_carver/audio/NewJeansOMG_h_22kHz_300.wav" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
                 </div>
-                <!-- Repeat for other samples like PWD, MWF, etc. -->
             </div>
         </section>
+        <section>
+            <h10 style="font-size: 30px">Evaluation</h10>
+            <p>Blah Blah</p>
+        </section>
     </main>
+    <style>
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:visited {
+          color: white;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:hover {
+          color: rgba(242, 117, 242, 0.793);
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        a:active {
+          color: rgb(243, 237, 109);
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        </style>
 </body>
 </html>
