@@ -30,7 +30,10 @@
                 In theory the algorithm may now be applied to the matrix where both the vertical and horizontal components can be carved. 
                 Notice that carving in the vertical context translates to the time domain while the horizontal context translates to the frequency
                 domain. Example audio samples are below in the "Examples" section.</p>
-            <h5 style="font-size: 30px">Approach</h5>
+            <h4 style="font-size: 30px">Strategy</h4>
+            <p>I had previously implemented the seam carving algorithm using Dijkstra's algorithm in one of my classes at UW. Although this 
+                approach produces the desired results, its time complexity is not satisfactory for large-scale projects. 
+            </p>
             <p>The audio files that I worked with are in the format of .wav. The idea was to convert the .wav files
                 to the time domain and apply the Short-Time Fourier Transform to convert to the frequency domain. With this,
                 the magnitude and phase could be extracted and used for seam carving. The seam carving algorithm is ran on the magnitude array
@@ -41,13 +44,13 @@
                 that I tested on was the power density spectrogram, power log spectrogram, and the MFCC representation for just the image of the spectrogram.
             </p>
             <div class="audio-samples">
-                <h6 style="font-size: 30px">Examples</h6>
-                <h7 style="font-size: 20px;">Carving in the Frequency Domain:</h7>
+                <h4 style="font-size: 30px">Examples</h4>
+                <h3 style="font-size: 20px;">Carving in the Frequency Domain:</h3>
                 <div class="big-screen">
                     <table class="table">
                         <thead>
                             <tr>
-                                <th style="width: 0px"></th>
+                                <th style="width: auto"></th>
                                 <th style="text-align: center;">Original</th>
                                 <th style="text-align: center;">400 Seams Carved</th>
                                 <th style="text-align: center;">600 Seams Carved</th>
@@ -84,12 +87,12 @@
             </div>
             </section>
             <div class="audio-samples">
-                <h8 style="font-size: 20px;">Carving in the Time Domain</h8>
+                <h3 style="font-size: 20px;">Carving in the Time Domain</h3>
                 <div class="big-screen">
                     <table class="table">
                         <thead>
                             <tr>
-                                <th style="width: 0px"></th>
+                                <th style="width: auto"></th>
                                 <th style="text-align: center;">Original</th>
                                 <th style="text-align: center;">200 Seams Carved</th>
                                 <th style="text-align: center;">400 Seams Carved</th>
@@ -128,10 +131,10 @@
         <section>
             <div class="audio-samples">
                 <div class="audio-sample">
-                    <h9 style="font-size: 20px;">Also Interesting:</h9>
+                    <h3 style="font-size: 20px;">Also Interesting:</h3>
                     <p>This audio file had 300 seams carved in the frequency domain. I forgot to keep the same sampling frequency 
                         of 44100 Hz and instead used 22050 Hz when changing back to .wav file from time. The resulting audio file was elongated and lower frequency.  </p>
-                        <img id="NewJeansOMG_h_22kHz_300.jpeg" src="../audio_carver/images/NewJeansOMG_h_22kHz_300.jpeg" class="img-fluid" style="width: 80%" width="10" height="380">
+                        <img id="NewJeansOMG_h_22kHz_300.jpeg" src="../audio_carver/images/NewJeansOMG_h_22kHz_300.jpeg" class="img-fluid" style="width: 80%" width="10" height="300">
                     <audio controls>
                         <source src="../audio_carver/audio/NewJeansOMG_h_22kHz_300.wav" type="audio/mpeg">
                         Your browser does not support the audio element.
@@ -140,16 +143,11 @@
             </div>
         </section>
         <section>
-            <h10 style="font-size: 30px">Evaluation</h10>
+            <h4 style="font-size: 30px">Evaluation</h4>
             <p>Blah Blah</p>
         </section>
     </main>
     <style>
-        a:link {
-          color: green;
-          background-color: transparent;
-          text-decoration: none;
-        }
         a:visited {
           color: white;
           background-color: transparent;
